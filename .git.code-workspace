@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".git"
+	},
+	{
+		"path": "Images Booki"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": ".git"
+  }
+}
