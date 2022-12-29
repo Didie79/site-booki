@@ -325,11 +325,13 @@ footer ul a {
   color: black;
 }
 /* version tablette*/
-@media screen and (max-width: 991px) {  /*header tablet*/
+@media screen and (max-width: 991px) {
+  /*header tablet*/
   .header {
     width: 100%;
   }
-  .searchTitle h1 { /*ZoneSerache*/
+  .searchTitle h1 {
+    /*ZoneSerache*/
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -343,13 +345,41 @@ footer ul a {
     padding: 1.1rem;
   }
 }
-/*version mobile*/
 @media screen and(max-width:768px) {
   .main {
     width: 100%;
   }
+
+  /*version mobile*/
 }
 @media screen and (max-width: 600px) {
-  .header {
+  .Header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .navHeader {
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
+  }
+
+  .trait2 {
+    border-bottom: 3px solid #0065fc;
+    width: 50%;
+  }
+  .trait:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+
+  .navHeaderlink {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    border-top: none;
+  }
+
+  .-active {
+    color: #0065fc;
+    border-top: none;
   }
 }
