@@ -54,6 +54,9 @@ Header {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
+.navHeaderlink:hover {
+  color: #0065fc;
+}
 /* ZONE MAIN*/
 main {
   margin: auto;
@@ -306,24 +309,28 @@ footer {
   justify-content: space-evenly;
   padding: 0 2rem;
   margin: auto;
+  width: 1400px;
 }
 .footerColumnList {
   width: 30%;
-  margin: 2rem;
-}
-.footerColumnListUl a {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0 4rem 0 0;
+  padding: 0 2rem;
+  margin: 2rem 3rem;
 }
 .footerColumnListUl {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
 }
-footer ul a {
+
+.footerColumnListUl li {
   color: black;
+  list-style: none;
+  line-height: 2rem;
 }
+.Ulli a {
+  text-decoration: none;
+}
+
 /* version tablette*/
 @media screen and (max-width: 991px) {
   /*header tablet*/
@@ -357,20 +364,39 @@ footer ul a {
     flex-direction: column;
     padding: 0;
   }
+  .logo {
+    margin: 0.5rem;
+  }
   .navHeader {
     width: 100%;
     border-bottom: 2px solid #f2f2f2;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
-
-  .trait2 {
-    border-bottom: 3px solid #0065fc;
-    width: 50%;
-  }
-  .trait:hover {
-    border-bottom: 3px solid #0065fc;
+  .trait :hover,
+  .trait2 :hover,
+  .trait3 :hover {
     border-top: none;
   }
-
+  .trait {
+    width: 50%;
+    border-bottom: solid 2px #0065fc;
+  }
+  .t3 {
+    border-bottom: 2px solid transparent;
+  }
+  .t3:hover {
+    border-bottom: 2px solid #0065fc;
+  }
+  .navHeader ul {
+    width: 100%;
+  }
+  .navULheader :hover {
+    border-bottom: 2px solid #0065fc;
+    transition: 0.1s;
+  }
   .navHeaderlink {
     text-decoration: none;
     color: black;
