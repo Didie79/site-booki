@@ -72,36 +72,34 @@ main {
   margin-top: 0.5rem;
 }
 /* zone formulaire*/
-.searchForm {
+.searchform {
   display: inline-flex;
   align-items: center;
   max-width: 100%;
-  margin: 1rem 0 0.7rem 2rem;
+  margin: 1.5rem;
 }
 .searchFormSpanFond {
   background-color: var(--gris);
   border-radius: 25px 0 0 25px;
-  padding: 0.7rem 1.3rem;
-  height: 2.9rem;
+  padding: 0.9rem 1.3rem;
 }
 .searchFormInput {
-  width: 100%;
   border: none;
   border: 1px solid #f2f2f2;
   font-weight: bold;
-  padding: 0.8rem 2.7rem;
+  padding: 0.9rem 3.2rem;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
   border: 1px solid #f2f2f2;
-  border-top: 3px solid;
   background-color: #0065fc;
-  border-radius: 0 15px 15px 0;
-  padding: 0.9rem 1.7rem;
+  border-radius: 0 12px 12px 0;
+  padding: 0.9rem 1.3rem;
   font-weight: bold;
   color: white;
+  margin-left: -5px;
 }
 /*zone filtres**/
 .searchFiltre {
@@ -111,7 +109,7 @@ main {
   justify-content: flex-start;
   flex-direction: row;
   margin-left: 2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 .FiltreTitle {
   display: flex;
@@ -132,7 +130,6 @@ main {
   margin-left: 2.1rem;
 }
 .Categorie:hover {
-  transform: scale(0.1s);
   background-color: #deebff;
 }
 .CategorieIcon {
@@ -158,7 +155,7 @@ main {
   flex-direction: row;
   align-items: center;
   margin-bottom: 0.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-top: 2rem;
 }
 .InfoIcon {
@@ -182,15 +179,14 @@ main {
 .cityPop {
   background-color: #f2f2f2;
   border-radius: 30px;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 .hebergement {
-  width: 66%;
+  width: 65%;
 }
 .hebergementCity,
 .lesPopulaires {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,33 +194,32 @@ main {
 .hebergementCity {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-right: 1rem;
+  justify-content: space-evenly;
 }
 .titlehebergement {
   padding-top: 0.5rem;
   padding-left: 1rem;
 }
 .cityPop {
-  width: 33%;
+  width: 34%;
 }
 .titlePop {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 0 0 1rem;
 }
 /* les cards hebergement*/
 .cityCard,
 .PopCard,
 .activityCard {
-  width: 250px;
+  width: 230px;
   border: 4px solid white;
   border-radius: 25px;
   background-color: white;
   list-style: none;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   box-shadow: 2px 1px 1px 2px rgba(233, 227, 227, 0.527);
 }
 .cityCardFigure img,
@@ -232,7 +227,7 @@ main {
 .activityCardFigure img {
   object-fit: cover;
   width: 100%;
-  height: 130px;
+  height: 125px;
   border-radius: 25px 25px 0 0;
 }
 .figureText {
@@ -240,16 +235,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0.5rem;
+  padding: 0.4rem;
   line-height: 1.2rem;
   list-style: none;
 }
+
 .PopCardFigure img {
   border-radius: 25px 0 0 25px;
   width: 50%;
+  height: 145px;
 }
 .activityCard img {
-  height: 350px;
+  height: 360px;
 }
 .activityCard {
   border: 1px transparent;
@@ -267,7 +264,7 @@ main {
 /* cartes populaires*/
 
 .PopCard {
-  width: 355px;
+  width: 345px;
 }
 .cityCard a,
 .PopCard a,
@@ -277,13 +274,14 @@ main {
 .PopCardFigure {
   display: flex;
 }
+
 .infoplus {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 /* Zone ACTIVITE */
 
 .activityCity {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 2rem;
 }
 .activity {
@@ -309,7 +307,6 @@ footer {
   justify-content: space-evenly;
   padding: 0 2rem;
   margin: auto;
-  width: 1400px;
 }
 .footerColumnList {
   width: 30%;
@@ -337,9 +334,14 @@ footer {
   .header {
     width: 100%;
   }
+  .navHeaderlink {
+    color: black;
+    border-top: 3px solid transparent;
+  }
+
   .searchTitle h1 {
     /*ZoneSerache*/
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .searchFiltre h3 {
@@ -350,15 +352,84 @@ footer {
   }
   .CategorieIcon {
     padding: 1.1rem;
+  } /*Main jusqu'a 991px*-zone recherche*/
+
+  .ZoneSearch {
+    font-size: 1rem;
   }
+  /*zone hebergement cards*/
+  .zoneHebergement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .hebergement,
+  .cityPop {
+    flex-direction: row;
+    width: 98%;
+    margin-top: 2rem;
+  }
+  .titlePop {
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .lesPopulaires {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .PopCard {
+    width: 250px;
+  }
+  .activityCard{
+    width:150px;
+  }
+
+  .activityCardFigure img {
+   height:150px;
 }
-@media screen and(max-width:768px) {
+
+@media screen and (max-width: 768px) {
   .main {
     width: 100%;
   }
+  .title,
+  .sTitle {
+    font-size: 16px;
+  }
 
-  /*version mobile*/
+  .FiltreTitle h3,
+  .searchFiltre {
+    font-size: small;
+    margin-left: 0.8rem;
+  }
+  .Categorie {
+    margin-left: 0.9rem;
+  }
+
+  /*les cards*/
+
+  .cityCard {
+    flex-wrap: wrap;
+    width: 215px;
+  }
+  .figureText {
+    font-size: 13px;
+  }
+  .figureText p {
+    font-size: 10px;
+  }
+  .PopCard {
+    width: 215px;
+  }
+  /*card activity*/
+  .footerColumn{
+    margin-top: 1rem;
+    padding:0;
+  }
 }
+/*version mobile*/
+
 @media screen and (max-width: 600px) {
   .Header {
     flex-direction: column;
