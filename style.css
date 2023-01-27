@@ -169,6 +169,9 @@ main {
   min-width: 32px;
   min-height: 32px;
 }
+.buttonGlass {
+  display: none;
+}
 
 /* zone hebergement*/
 
@@ -381,14 +384,14 @@ footer {
   .PopCard {
     width: 250px;
   }
-  .activityCard{
-    width:150px;
+  .activityCard {
+    width: 150px;
   }
 
   .activityCardFigure img {
-   height:150px;
+    height: 150px;
+  }
 }
-
 @media screen and (max-width: 768px) {
   .main {
     width: 100%;
@@ -422,10 +425,10 @@ footer {
   .PopCard {
     width: 215px;
   }
-  /*card activity*/
-  .footerColumn{
-    margin-top: 1rem;
-    padding:0;
+  /*footer*/
+  .footerColumnList {
+    margin: 0;
+    padding: 2rem 0.5rem;
   }
 }
 /*version mobile*/
@@ -477,5 +480,58 @@ footer {
   .-active {
     color: #0065fc;
     border-top: none;
+  }
+  /* searhFiltre*/
+  .searchFiltre {
+    flex-wrap: wrap;
+  }
+  .searchCategorie {
+    flex-wrap: wrap;
+  }
+  .Categorie {
+    margin-top: 1rem;
+  }
+  .buttonRechearch {
+    display: none;
+  }
+  .buttonGlass {
+    display: unset;
+  }
+
+  /*zone hebergement*/
+  .zoneHebergement {
+    flex-direction: column-reverse;
+  }
+  .hebergement,
+  .cityPop {
+    background: none;
+  }
+  .cityPop {
+    flex-direction: column;
+  }
+  .lesPopulaires {
+    flex-direction: column;
+  }
+  .PopCard {
+    width: 450px;
+  }
+  .activity {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .activityCard {
+    width: 100%;
+  }
+  .figureText h4 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+  .footerColumn {
+    flex-direction: column;
+  }
+  .footerColumnList {
+    width: 100%;
   }
 }

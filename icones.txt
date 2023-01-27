@@ -6,4 +6,5 @@
 <i class="fa-solid fa-location-dot"></i>                location
 <i class="fa-regular fa-money-bill-wave"></i>            money
 <i class="fa-solid fa-heart"></i>                        heart
+<i class="fa-solid fa-magnifying-glass"></i>              Loupe
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
