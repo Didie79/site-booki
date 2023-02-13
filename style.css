@@ -61,6 +61,7 @@ Header {
 main {
   margin: auto;
   padding: 0 1rem;
+  margin: 0 1rem;
   max-width: 1400px;
 }
 /*zone Search*/
@@ -238,9 +239,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem 0.5rem 0 0.5rem;
+  padding-left: 1.2rem;
   line-height: 1.2rem;
   list-style: none;
+}
+.figureText h4 {
+  padding-top: 0.5rem;
 }
 
 .PopCardFigure img {
@@ -249,7 +253,7 @@ main {
   height: 145px;
 }
 .activityCard img {
-  height: 360px;
+  height: 350px;
 }
 .activityCard {
   border: 1px transparent;
@@ -267,7 +271,7 @@ main {
 /* cartes populaires*/
 
 .PopCard {
-  width: 80%;
+  width: 85%;
 }
 .cityCard a,
 .PopCard a,
@@ -295,17 +299,18 @@ main {
 .activityCity img {
   object-fit: cover;
   width: 100%;
-  height: 300px;
   border-radius: 25px 25px 0 0;
+  height: 300px;
 }
 .activityCard {
   width: 20%;
+  height: 350px;
+  margin-top: 0.5rem;
 }
 /*FOOTER*/
 footer {
   background-color: #f2f2f2;
   width: 100%;
-  margin-top: 2rem;
 }
 .footerColumn {
   display: flex;
@@ -359,7 +364,9 @@ footer {
   .CategorieIcon {
     padding: 1.1rem;
   } /*Main jusqu'a 991px*-zone recherche*/
-
+  .Main {
+    padding: 0;
+  }
   .ZoneSearch {
     font-size: 1rem;
   }
@@ -392,14 +399,21 @@ footer {
   }
 
   /*zone activity*/
+  .activityCity {
+    margin-left: 0;
+    margin: 1 0;
+  }
+  .activity {
+    margin: 1rem 0;
+  }
   .activityCard {
-    height: 200px;
     width: 50%;
+    height: 300px;
     margin: 0 0.5rem;
   }
 
   .activityCardFigure img {
-    height: 150px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -491,6 +505,16 @@ footer {
   .searchFiltre {
     flex-wrap: wrap;
   }
+  .searchform {
+    max-width: 100%;
+    margin: 1.5rem;
+  }
+  .searchFormSpanFond {
+    padding: 0.6rem 0.8rem;
+  }
+  .searchFormInput {
+    padding: 0.6rem 2rem;
+  }
   .searchCategorie {
     flex-wrap: wrap;
   }
@@ -503,8 +527,8 @@ footer {
   .buttonGlass {
     display: unset;
   }
-  .Main {
-    margin: 0;
+  .button {
+    padding: 0.7rem 0.7rem;
   }
   .header {
     padding: 0;
@@ -519,7 +543,6 @@ footer {
   .cityPop {
     flex-direction: column;
     margin: 0;
-    padding: 0.5rem;
     width: 100%;
     border-radius: 0%;
   }
@@ -533,12 +556,15 @@ footer {
     width: 100%;
   }
   .activityCard {
-    width: 95%;
+    height: 200px;
+    margin: 0.5rem;
+  }
+  .activityCardFigure img {
+    height: 150px;
   }
   .figureText h4 {
     font-size: 15px;
     font-weight: bold;
-    padding-left: 1rem;
   }
   .footerColumn {
     flex-direction: column;
@@ -546,21 +572,7 @@ footer {
   .footerColumnList {
     width: 100%;
   }
-  /*version mobile*/
-  main {
-    padding: 0;
-    margin: 0;
-  }
-  .searchform {
-    max-width: 100%;
-  margin: 1.5rem;
-}
-.searchFormSpanFond {  
-  padding: 0.6rem 0.8rem;
-}
-.searchFormInput {  
-  padding: 0.6rem 2rem;
-}
+
   .cityCard,
   .PopCard,
   .activityCard {
